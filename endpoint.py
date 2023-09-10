@@ -17,13 +17,13 @@ def get_info():
 
     response_data = {
         "slack_name": slack_name,
-        "current_day": current_day',
+        "current_day": current_day,
         "utc_time": utc_now,
-        "Track": track,
+        "track": track,
         "github_file_url":
             'https://github.com/Mamurooyiboluawhore/HNG/endpoint.py',
         "github_repo_url": 'https://github.com/Mamurooyiboluawhore/HNG',
-        "status_code": request.status
+        "status_code": 200
     }
 
     return jsonify(response_data)
