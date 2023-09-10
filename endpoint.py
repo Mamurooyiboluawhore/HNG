@@ -25,7 +25,6 @@ def get_info():
         "github_repo_url": 'https://github.com/Mamurooyiboluawhore/HNG',
         "status_code": 200
     }
-
     return jsonify(response_data)
 
 
