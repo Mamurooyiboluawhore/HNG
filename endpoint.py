@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 def get_current_day():
     current_day = datetime.datetime.utcnow().strftime("%A")
-    time = datetime.datetime.utcnow()
-    utc_now = time.isoformat()
+    utc_now = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     return current_day, utc_now
 
 @app.route('/api', methods=['GET'])
